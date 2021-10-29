@@ -1,0 +1,63 @@
+/* Element Styles */
+body {
+    box-sizing: border-box;
+    margin: 0;
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 300;
+    text-align: center;
+}
+header,
+ul,
+.container {
+    display: flex;
+    flex-direction: column;
+}
+header,
+ul,
+.nav-list,
+footer {
+    padding: .5rem;
+}
+header,
+footer,
+.contact {
+    background-color: rgb(243, 243, 243);
+}
+a,
+footer {
+    font-weight: 500;
+}
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+a {
+    text-decoration: none;
+    color: black;
+}
+footer {
+    display: flex;
+    justify-content: space-between;
+}
+
+/* Class Styles */
+.nav-list {
+    margin: .25rem 0;
+    background-color: white;
+}
+.my-img {
+    max-width: 80%;
+    margin: 0 auto;
+}
+.project-img {
+    max-width: 100%;
+}
+.container {
+    margin: 1rem;
+}
+.contact {
+    padding: 2rem .5rem;
+    border-bottom: 2px solid gray;
+}
+
+/* Media Queries */
