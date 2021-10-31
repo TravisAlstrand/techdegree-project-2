@@ -14,13 +14,14 @@ ul,
 }
 header,
 .nav-list,
+#skills,
 footer {
     padding: .5rem;
 }
 header,
 footer,
 #contact {
-    background-color: rgb(243, 243, 243);
+    background-color: rgb(170, 228, 255);
 }
 a,
 footer {
@@ -34,6 +35,10 @@ a {
     text-decoration: none;
     color: black;
 }
+a:hover {
+    color: rgb(24, 102, 141);
+    transition-duration: .5s;
+}
 footer {
     display: flex;
     justify-content: space-between;
@@ -44,6 +49,9 @@ footer {
 #portfolio {
     margin: 1rem;
 }
+#skills {
+    border-top: 2px solid rgb(170, 228, 255);
+}
 #contact {
     padding: 2rem .5rem;
     border-bottom: 2px solid gray;
@@ -53,10 +61,17 @@ footer {
 .nav-list {
     margin: .25rem 0;
     background-color: white;
+    border-radius: 25% 25% 0 0;
 }
 .my-img {
-    max-width: 80%;
+    max-width: 30%;
     margin: 0 auto;
+    background: radial-gradient(white, rgb(24, 102, 141));
+    border: 2px solid rgb(24, 102, 141);
+    border-radius: 50%;
+}
+.my-img:hover {
+    background: radial-gradient(rgb(24, 102, 141), white);
 }
 .item {
     padding-bottom: 1.5rem;
@@ -66,6 +81,13 @@ footer {
 }
 .bottom-nav {
     display: none;
+}
+.signature {
+    padding-left: 1rem;
+    margin-top: 0;
+    font-family: 'Cherish', cursive;
+    font-size: 30px;
+    color:rgb(151, 3, 3)
 }
 
 /* Media Queries */
@@ -85,7 +107,7 @@ footer {
         justify-content: center;
     }
     .nav-list {
-        background-color: rgb(243, 243, 243);
+        background-color: rgb(170, 228, 255);
     }
     .my-img {
         order: 1;
@@ -111,12 +133,14 @@ footer {
     }
 }
 @media screen and (min-width: 1024px) {
+ 
     .header-container1 {
         display: flex;
         flex-direction: row;
         justify-content: space-between;
     }
     .item {
-        max-width: 30vh;
+        flex-basis: auto;
+        max-width: 30vw;
     }
 }
